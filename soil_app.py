@@ -15,7 +15,7 @@ st.write("Machine Learning Based Soil Classification Model")
 # -----------------------------
 LL = st.number_input("Liquid Limit (LL)", min_value=0.0)
 PL = st.number_input("Plastic Limit (PL)", min_value=0.0)
-Finess = st.number_input("Fines (%)", min_value=0.0)
+Fines = st.number_input("Fines (%)", min_value=0.0)
 Sand = st.number_input("Sand (%)", min_value=0.0)
 Gravel = st.number_input("Gravel (%)", min_value=0.0)
 
@@ -58,4 +58,5 @@ if st.button("Predict Soil Type"):
     ax2.set_xticklabels(features, rotation=45)
 
     st.pyplot(fig2)
+
 
